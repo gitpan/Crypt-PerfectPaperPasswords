@@ -1,5 +1,5 @@
 --- 
-abstract: Steve Gibson' Perfect Paper Passwords
+abstract: Steve Gibson's Perfect Paper Passwords
 author: 
   - Andy Armstrong  C<< <andy@hexten.net> >>
 build_requires: 
@@ -19,8 +19,7 @@ no_index:
 requires: 
   Crypt::Rijndael: 0
   Digest::SHA256: 0
-  Math::BigInt: 0
   Scalar::Util: 0
   Time::HiRes: 0
   perl: 5.8.0
-version: 0.02
+version: 0.03
