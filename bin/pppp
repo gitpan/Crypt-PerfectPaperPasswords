@@ -1,0 +1,86 @@
+#!/usr/bin/perl
+
+use strict;
+use warnings;
+use App::PerlPPP;
+
+my $app = App::PerlPPP->new;
+$app->parse_args(@ARGV);
+$app->run;
+
+=head1 NAME
+
+pppp - Generate Perfect Paper Password cards
+
+=head1 SYNOPSIS
+
+ pppp command [options] [command] [args]
+
+=head1 OPTIONS
+
+Boolean options:
+
+ -h,  --help        Display this help
+ -?,                Display this help
+ -H,  --man         Longer manpage for prove
+
+Options that take arguments:
+
+      --key         Supply 64 character hex key
+      --passphrase  Supply an arbitrary passphrase
+      --columns     Width for generated table
+      --rows        Height for generated table
+      --title       Title for card
+      --alphabet    Alphabet to use
+
+Commands
+
+ card       Create a new card
+ newkey     Create a new random key
+ help       Display this help
+
+=head1 COMMANDS
+
+=head2 C<card>
+
+Generated a PPP card
+
+    pppp --passphrase something card 1
+    $ perl -Ilib bin/pppp --passphrase Something card 1
+    Perfect Paper Passwords [1]
+    =======================================
+          A    B    C    D    E    F    G  
+    =======================================
+       1 !MCm r8+J Kx@= 33k9 nJMM 74Fe nMfV
+       2 s2fX gRAH @y5L oSiM 6cPT MP+4 MCKf
+       3 GDHq #T#9 2tei #gdC S#8= JFKT p@5K
+       4 jvBp Df#7 :aqM P4bz :7:g kMVC M8qx
+       5 CKjT AWcf !mkV Ebpt 2M=E XPaj 2AVN
+       6 kxYn nG98 Ev== #dm# o9vc NWFi 8UwE
+       7 FHak HNZ5 %bet Ye?8 P9Ab pmd: Cycj
+       8 xgeg KsND avz? tWpZ 2Rsp B%4P F2em
+       9 MrAb 7L:Y w=h+ MTM8 TLk3 taVL 2+y:
+      10 x26X oV7r RHZ# nSZ! FDFm p@im :==F
+    =======================================
+
+=head2 C<newkey>
+
+Create a new random PPP key
+
+    $ pppp newkey
+    Generated key is 
+    ea524439750c464eca82ec4eb24e5268b1c17906bfe35fe53fc8f9a2b62da929
+
+=head1 AUTHOR
+
+Copyright (c) 2007, Andy Armstrong C<< <andy@hexten.net> >>.
+
+Original Perfect Paper Passwords implementation by Steve Gibson. More details
+here:
+
+    L<http://www.grc.com/ppp.htm>
+
+=head1 LICENCE AND COPYRIGHT
+
+This module is free software; you can redistribute it and/or
+modify it under the same terms as Perl itself. See L<perlartistic>.
