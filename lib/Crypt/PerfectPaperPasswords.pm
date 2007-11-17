@@ -15,11 +15,11 @@ Crypt::PerfectPaperPasswords - Steve Gibson' Perfect Paper Passwords
 
 =head1 VERSION
 
-This document describes Crypt::PerfectPaperPasswords version 0.01
+This document describes Crypt::PerfectPaperPasswords version 0.02
 
 =cut
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 =head1 SYNOPSIS
 
