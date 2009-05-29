@@ -1,8 +1,9 @@
 bin/pppp
+Build.PL
 Changes
+inc/MyBuilder.pm
 lib/App/PerlPPP.pm
 lib/Crypt/PerfectPaperPasswords.pm
-Makefile.PL
 MANIFEST
 META.yml
 README
@@ -11,4 +12,3 @@ t/app.t
 t/conformance.t
 t/pod-coverage.t
 t/pod.t
-SIGNATURE                                Public-key signature (added by MakeMaker)
